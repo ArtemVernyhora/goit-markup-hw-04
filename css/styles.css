@@ -52,6 +52,7 @@ img {
   --social-link-hover: #2196f3;
   --team-soc-link: #afb1b8;
   --social-hover: #2196f3;
+  --hero-bg: #c4c4c4;
 }
 
 .list {
@@ -184,7 +185,7 @@ img {
 /* Hero */
 
 .hero {
-  background-color: var(--background-grey);
+  background-color: var(--hero-bg);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -194,7 +195,8 @@ img {
   background-size: cover;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -250,8 +252,7 @@ img {
 }
 .benefits-thumb {
   display: flex;
-  width: 100%;
-  height: 170px;
+  height: 120px;
   background: var(--color-button);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -313,6 +314,7 @@ img {
   color: var(--main-color);
 }
 .team-item {
+  list-style: none;
   width: calc((100% - 90px) / 4);
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px var(--color-team-rgb),
@@ -342,15 +344,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-grey);
+  margin-bottom: 16px;
 }
 .team-item-social {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
-.social-item {
-  display: flex;
-}
+
 .social-item:not(:first-child) {
   margin-left: 10px;
 }
